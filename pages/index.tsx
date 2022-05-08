@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <>
       <Head>
         <title>initial-commit</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,8 +65,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <footer className=""></footer>
-    </div>
+      <footer></footer>
+    </>
   )
 }
 
