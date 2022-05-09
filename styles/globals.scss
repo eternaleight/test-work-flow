@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background: #505861;
-  font-family: 'noto sans jp', 'Quicksand', sans-serif;
+  font-family: 'noto sans jp', sans-serif;
   color: rgb(93, 95, 104);
   background-color: rgb(226, 234, 245);
 }
 
 .top-group {
   h2 {
+    font-family: sans-serif;
     font-size: clamp(12px, 2vw, 15px);
-    box-shadow: 1px 1px 6px 0 #fff inset;
+    box-shadow: 1px 1px 4px 0 #fff inset;
     margin-bottom: 20px;
     border-radius: 4px;
     background: #222;
@@ -45,9 +45,6 @@ body {
     transition: transform 1s;
     &:hover {
       font-size: clamp(0px, 2vw, 20px);
-      padding: 0vw;
-      background: linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
-      background-size: 90px;
       background-repeat: repeat;
       background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg),
         linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
