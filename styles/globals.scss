@@ -1,49 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background: #505861;
+  font-family: 'noto sans jp', 'Quicksand', sans-serif;
+  color: rgb(93, 95, 104);
+  background-color: rgb(226, 234, 245);
 }
 
 .top-group {
   h2 {
+    font-size: clamp(12px, 2vw, 15px);
+    box-shadow: 1px 1px 6px 0 #fff inset;
     margin-bottom: 20px;
     border-radius: 4px;
     background: #222;
     text-align: center;
-    color: white;
+    color: aliceblue;
     height: 52px;
   }
 }
 
 .box-group {
   div {
-    font-size: clamp(0px,2vw,20px);
+    font-size: clamp(0px, 2vw, 20px);
     height: 10vw;
     padding: 3.2vw;
     margin-top: 6px;
     text-align: center;
-    border: inset thin black;
-    background: #fff;
+    background: #e2eaf5aa;
+    border-radius: 10px;
+    border: solid 0.2px aliceblue;
+    box-shadow: -4px -4px 40px 0 rgba(255, 255, 255, 0.65), 6px 8px 25px 0 rgba(154, 171, 233, 0.3);
   }
 }
 
 .box3 {
-  h2{
+  h2 {
   }
   div {
-    font-size: clamp(0px,2vw,20px);
-    padding: 0vw;
+    transition: transform 1s;
     &:hover {
+      font-size: clamp(0px, 2vw, 20px);
+      padding: 0vw;
       background: linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
       background-size: 90px;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg),
         linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
       background-size: 9vw, cover;
-      background-position: 5vw, 0 0;
+      background-position: 135vw, 0 0;
       box-shadow: 3px 3px 20px 1px #aaf;
+      transform: scale(1.8);
+      transition: transform 3s ease-in, background-position 180s 3s linear;
     }
   }
 }
