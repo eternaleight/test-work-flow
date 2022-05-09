@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body className="container mx-auto top-group bg-slate-200 pb-9">
+      <body className="container mx-auto top-group bg-slate-200 pb-9 max-w-1280px]">
         <div className="flex gap-x-3">
           <div className="box-group flex-[1]">
             <h2 className='xs:pt-3'>ワークフロー</h2>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <div>↓</div>
           </div>
           <div className="box-group flex-[2]">
-            <h2 className='xs:pt-3'>使用するツール</h2>
+            <h2 className='pt-3'>使用するツール</h2>
             <section className="box3">
               <div>メール 電話 クラウドソーシング</div>
               <div>＜ヒアリングシート＞Execel メモ帳 ノート Googleスプレッドシート</div>

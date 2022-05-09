@@ -19,7 +19,7 @@ body {
 
 .box-group {
   div {
-    font-size: clamp(0px,2vw,80px);
+    font-size: clamp(0px,2vw,20px);
     height: 10vw;
     padding: 3.2vw;
     margin-top: 6px;
@@ -33,7 +33,7 @@ body {
   h2{
   }
   div {
-    font-size: 2vw;
+    font-size: clamp(0px,2vw,20px);
     padding: 0vw;
     &:hover {
       background: linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
