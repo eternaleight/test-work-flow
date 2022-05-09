@@ -46,8 +46,7 @@ body {
     &:hover {
       font-size: clamp(0px, 2vw, 20px);
       background-repeat: repeat;
-      background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg),
-        linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
+      background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg);
       background-size: 9vw, cover;
       background-position: 135vw, 0 0;
       box-shadow: 3px 3px 20px 1px #aaf;
