@@ -5,32 +5,45 @@
 body {
   background: #505861;
 }
+
 .top-group {
   h2 {
-    margin-top: 5px;
     margin-bottom: 20px;
-    width: 7.6rem;
     border-radius: 4px;
     background: #222;
     text-align: center;
     color: white;
+    height: 52px;
   }
 }
+
 .box-group {
   div {
-    width: 120px;
-    padding: 8px;
+    font-size: clamp(0px,2vw,80px);
+    height: 10vw;
+    padding: 3.2vw;
     margin-top: 6px;
     text-align: center;
     border: inset thin black;
     background: #fff;
   }
 }
-.long-box {
-  h2 {
-    min-width: 400px;
+
+.box3 {
+  h2{
   }
   div {
-    min-width: 400px;
+    font-size: 2vw;
+    padding: 0vw;
+    &:hover {
+      background: linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
+      background-size: 90px;
+      background-repeat: no-repeat;
+      background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg),
+        linear-gradient(to top, darkslategray 50%, ghostwhite 10%, purple);
+      background-size: 9vw, cover;
+      background-position: 5vw, 0 0;
+      box-shadow: 3px 3px 20px 1px #aaf;
+    }
   }
 }
