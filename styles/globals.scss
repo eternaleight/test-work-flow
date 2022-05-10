@@ -3,18 +3,65 @@
 @tailwind components;
 @tailwind utilities;
 
+$easeInOutQuart: cubic-bezier(0.77, 0.2, 0.05, 1);
+$easeInBack: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$random: random(100) + px;
+
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+// .foo {
+//   font-size: #{randomNum(5, 10)}px;
+// }
+
 body {
   background: #505861;
   font-family: 'noto sans jp', sans-serif;
   color: rgb(93, 95, 104);
   background-color: rgb(226, 234, 245);
+  animation: blur 1.8s ,shadow 1.8s ,opacity 1.8s ease-out;
+   border-radius: 10px;
+   filter: drop-shadow(3px 3px 3px rgb(186, 194, 215));
+}
+
+@keyframes blur 
+{
+  0% {
+    filter: blur(6px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes shadow 
+{
+  0% {
+    filter: drop-shadow(0px 0px 0px rgb(186, 194, 215));
+  }
+  100% {
+    filter: drop-shadow(3px 3px 3px rgb(186, 194, 215));
+  }
+}
+@keyframes opacity 
+{
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .top-group {
   h2 {
     font-family: sans-serif;
     font-size: clamp(12px, 2vw, 15px);
-    box-shadow: 1px 1px 4px 0 #fff inset;
+    box-shadow: 1px 1px 3px 0 #fff inset;
     margin-bottom: 20px;
     border-radius: 4px;
     background: #222;
@@ -33,7 +80,7 @@ body {
     text-align: center;
     background: #e2eaf5aa;
     border-radius: 10px;
-    border: solid 0.2px aliceblue;
+    border: solid 0.1px aliceblue;
     box-shadow: -4px -4px 40px 0 rgba(255, 255, 255, 0.65), 6px 8px 25px 0 rgba(154, 171, 233, 0.3);
   }
 }
@@ -42,16 +89,44 @@ body {
   h2 {
   }
   div {
-    transition: transform 1s;
+    transition: box-shadow 3s $easeOutQuint, transform 1s;
     &:hover {
       font-size: clamp(0px, 2vw, 20px);
+      // background-repeat: no-repeat;
       background-repeat: repeat;
+      // background-image: url();
       background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg);
       background-size: 9vw, cover;
       background-position: 135vw, 0 0;
       box-shadow: 3px 3px 20px 1px #aaf;
       transform: scale(1.8);
-      transition: transform 3s ease-in, background-position 180s 3s linear;
+      // transition:transform 3s $easeOutQuint, background-position 18s 0s linear;
+  // animation: blur 1.8s,name 2.8s alternate linear infinite;
+      transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
     }
   }
+  @keyframes name 
+  {
+    0% {
+      background-position: -20px 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  // @keyframes image 
+  // {
+  //   0% {
+  //     background-repeat: no-repeat;
+  //     background-image: url();
+  //     background-size: 9vw, cover;
+  //   opacity: 1;
+  //   }
+  //   100% {
+  //     background-repeat: no-repeat;
+  //     background-image: url();
+  //     background-size: 9vw, cover;
+  //   opacity: 0;
+  //   }
+  // }
 }
