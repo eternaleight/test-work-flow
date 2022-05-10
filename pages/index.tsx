@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             <div>改修</div>
           </div>
           <div className=" box-group flex-[1]">
-            <h2 className='pt-2 sm:pt-4'>発注者とのやり取り</h2>
+            <h2 className='pt-2 media sm:pt-4'>発注者とのやり取り</h2>
             <div>↓</div>
             <div>打ち合わせ</div>
             <div>見積もり提出</div>
