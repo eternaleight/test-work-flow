@@ -95,7 +95,9 @@ body {
   h2 {
   }
   div {
-    transition: box-shadow 3s $easeOutQuint, transform 1s;
+      transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
+      animation: name 2.8s alternate linear,image 3s;
+      background-repeat: repeat;
     &:hover {
       font-size: clamp(0px, 2vw, 20px);
       // background-repeat: no-repeat;
@@ -107,7 +109,7 @@ body {
       box-shadow: 3px 3px 20px 1px #aaf;
       transform: scale(1.8);
       // transition:transform 3s $easeOutQuint, background-position 18s 0s linear;
-      // animation: blur 1.8s,name 2.8s alternate linear infinite;
+      // animation: name 1.8s;
       transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
     }
   }
@@ -120,19 +122,17 @@ body {
       background-position: 100% 0;
     }
   }
-  // @keyframes image 
-  // {
-  //   0% {
-  //     background-repeat: no-repeat;
-  //     background-image: url();
-  //     background-size: 9vw, cover;
-  //   opacity: 1;
-  //   }
-  //   100% {
-  //     background-repeat: no-repeat;
-  //     background-image: url();
-  //     background-size: 9vw, cover;
-  //   opacity: 0;
-  //   }
-  // }
+  @keyframes image 
+  {
+    0% {
+      background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg);
+      background-size: 9vw, cover;
+    opacity: 1;
+    }
+    100% {
+      background-image: url(https://img.youtube.com/vi/n4Ui2B4Wqis/sddefault.jpg);
+      background-size: 9vw, cover;
+    opacity: 0;
+    }
+  }
 }
