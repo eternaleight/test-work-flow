@@ -95,7 +95,9 @@ body {
   h2 {
   }
   div {
-    transition: box-shadow 3s $easeOutQuint, transform 1s;
+      transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
+      // animation: name 2.8s alternate linear,image 3s;
+      background-repeat: repeat;
     &:hover {
       font-size: clamp(0px, 2vw, 20px);
       // background-repeat: no-repeat;
@@ -107,7 +109,6 @@ body {
       box-shadow: 3px 3px 20px 1px #aaf;
       transform: scale(1.8);
       // transition:transform 3s $easeOutQuint, background-position 18s 0s linear;
-      // animation: blur 1.8s,name 2.8s alternate linear infinite;
       transition: transform 3s $easeOutQuint, background-position 180s 3s linear;
     }
   }
