@@ -15,19 +15,27 @@ $random: random(100) + px;
   @return $randomNum;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 // .foo {
 //   font-size: #{randomNum(5, 10)}px;
 // }
 
 body {
-  background: #505861;
   font-family: 'noto sans jp', sans-serif;
   color: rgb(93, 95, 104);
-  background-color: rgb(226, 234, 245);
+  // background-color: rgb(226, 234, 245);
+  // background-color: #e2eaf5;
+  background-color: #000;
   animation: blur 1.8s ,shadow 1.8s ,opacity 1.8s ease-out;
-   border-radius: 10px;
-   filter: drop-shadow(3px 3px 3px rgb(186, 194, 215));
+  border-radius: 10px;
+  // box-shadow: (3px 3px 3px rgb(186, 194, 215));
 }
+
+
 
 @keyframes blur 
 {
