@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const workflow = () => (
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, backgroundColor: ''}}
+        animate={{ opacity: 1}}
         exit={{ opacity: 0 }}
       >
   <div className="rounded-[8px] shadow1 top-group container mx-auto max-w-[1280px] bg-slate-200 px-2 pt-1 pb-9">
