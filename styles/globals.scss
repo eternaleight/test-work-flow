@@ -28,11 +28,11 @@ body {
   font-family: 'noto sans jp', sans-serif;
   color: rgb(93, 95, 104);
   // background-color: rgb(226, 234, 245);
-  // background-color: #e2eaf5;
-  background-color: #000;
-  animation: blur 1.8s ,shadow 1.8s ,opacity 1.8s ease-out;
+  background-color: #e2eaf5;
+  // background-color: #000;
+  // animation: blur 1.8s ,shadow 1.8s ,opacity 1.8s ease-out;
   border-radius: 10px;
-  // box-shadow: (3px 3px 3px rgb(186, 194, 215));
+  filter: drop-shadow (3px 3px 3px rgb(186, 194, 215));
 }
 
 
