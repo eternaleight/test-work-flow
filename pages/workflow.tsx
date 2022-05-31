@@ -68,7 +68,7 @@ const workflow = () => (
           <div>Adobe XD Figma Photoshop Sketch Illustrator</div>
           <div>↓</div>
           <div className="">
-            HTML CSS Typescript React Nect.js TailwindCSS
+            HTML CSS Typescript React Next.js TailwindCSS
             CMSを使って管理・更新するシステムをカスタマイズ Sanity.io Firebase MovableType EC-CUBE
           </div>
           <div>↓</div>
