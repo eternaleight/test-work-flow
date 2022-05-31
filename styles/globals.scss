@@ -33,6 +33,9 @@ body {
   // animation: blur 1.8s ,shadow 1.8s ,opacity 1.8s ease-out;
   border-radius: 10px;
   filter: drop-shadow (3px 3px 3px rgb(186, 194, 215));
+  @media screen and (max-width: 380px) {
+      overflow-x: hidden;
+  }
 }
 
 
